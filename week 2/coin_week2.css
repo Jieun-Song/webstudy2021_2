@@ -1,0 +1,162 @@
+@import "reset.css";
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+header {
+  height: 100px;
+  background-color: rgb(0, 0, 158);
+  display: flex;
+  align-items: center;
+}
+
+.header_logo {
+  float: left;
+  margin-right: 15px;
+}
+.header_title {
+  border-left: 0.1em solid #a8a8a8;
+  padding: 0.3em;
+
+  float: left;
+  color: white;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+}
+
+.notice {
+  text-align: center;
+}
+
+.notice_circle {
+  margin: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.notice > p {
+  line-height: 1.5;
+}
+
+.form {
+  background-color: white;
+  margin: 20px 200px 20px 200px;
+  box-shadow: 5px 5px 20px grey;
+}
+
+.form_character_title {
+  font-size: 15px;
+  display: inline;
+}
+
+.form_character_eng {
+  display: inline;
+}
+
+.form_character_notice {
+  display: inline;
+  text-align: right;
+  color: rgb(4, 4, 153);
+}
+
+.form_form > label {
+  text-align: left;
+  display: block;
+}
+
+.form_button {
+  display: flex;
+  align-items: center;
+}
+.form_button_button {
+  border: 0;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+  font-size: large;
+  text-align: left;
+  padding: 20px;
+  margin: 30px;
+  height: 60px;
+  width: 300px;
+}
+
+input[type="text"] {
+  border: 1px solid rgb(172, 172, 172);
+  background-color: rgb(235, 238, 255);
+}
+
+input[type="text"]:focus {
+  border: 2px solid black;
+}
+
+.form_parent {
+  display: flex;
+}
+
+.form_child {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+
+.info {
+  background-color: rgb(56, 56, 56);
+  line-height: 1.5;
+  padding: 30px;
+  margin: 30px 100px 40px 100px;
+}
+
+.info_img {
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.info_title_ko {
+  font-size: larger;
+  color: white;
+  line-height: 2.5;
+}
+
+.info_title_en {
+  font-size: large;
+  color: grey;
+}
+
+.info > ul {
+  color: white;
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+li::marker {
+  color: blue;
+}
+
+footer {
+  background-color: #222222;
+
+  padding: 20px;
+  line-height: 2.7;
+}
+
+footer > A {
+  color: white;
+}
+
+footer > img {
+  color: white;
+  width: 15px;
+  height: 15px;
+  filter: opacity(0.3) drop-shadow(0 0 0 white);
+}
